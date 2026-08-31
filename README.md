@@ -59,10 +59,10 @@ Open an issue — I might get to it when I'm bored.
 
 Useful links:
 
-- [Bug report](https://github.com/rushiranpise/morphe-patches/issues/new?template=bug_report.yml)
-- [Patch broken after app update](https://github.com/rushiranpise/morphe-patches/issues/new?template=patch_broken_after_update.yml)
-- [Enhancement request](https://github.com/rushiranpise/morphe-patches/issues/new?template=enhancement_request.yml)
-- [App request discussion](https://github.com/rushiranpise/morphe-patches/discussions/new?category=app-requests)
+- [Bug report](https://github.com/xypherose/morphe-patches/issues/new?template=bug_report.yml)
+- [Patch broken after app update](https://github.com/xypherose/morphe-patches/issues/new?template=patch_broken_after_update.yml)
+- [Enhancement request](https://github.com/xypherose/morphe-patches/issues/new?template=enhancement_request.yml)
+- [App request discussion](https://github.com/xypherose/morphe-patches/discussions/new?category=app-requests)
 
 Before requesting a patch:
 
@@ -73,9 +73,9 @@ Before requesting a patch:
 
 ## How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=rushiranpise/morphe-patches
+Click here to add these patches to Morphe: [https://morphe.software/add-source?github=xypherose/morphe-patches]
 
-Or manually add this repository URL as a patch source in Morphe: https://github.com/rushiranpise/morphe-patches
+Or manually add this repository URL as a patch source in Morphe: https://github.com/xypherose/morphe-patches
 
 The latest generated patch source release and channel are shown at the top of the [patches list](#-patches-list).
 
@@ -93,7 +93,7 @@ Bug reports must include:
 ## 🩹 Patches list
 
 <!-- PATCHES_START -->
-> **[v1.21.1](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.21.1)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`main`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**370 patches** across **239 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.21.1](https://github.com/xypherose/morphe-patches/releases/tag/v1.21.1)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`main`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**370 patches** across **239 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
