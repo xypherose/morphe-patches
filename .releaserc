@@ -1,6 +1,7 @@
 {
   "branches": [
     "main",
+    "xypherose",
     {
       "name": "dev",
       "prerelease": true
