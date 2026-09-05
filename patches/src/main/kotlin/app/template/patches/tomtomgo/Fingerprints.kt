@@ -166,7 +166,7 @@ object BillingPurchaseStarterFingerprint : Fingerprint(
 
 // Returns the current active subscription (tb/a) from the subscription store (X9/r).
 object CurrentSubscriptionFingerprint : Fingerprint(
-    definingClass = "Le9/u2;",
+    definingClass = "Le9/v2;",
     name = "J1",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     returnType = "Ltb/a;",

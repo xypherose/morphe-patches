@@ -28,30 +28,30 @@ val unlockPremiumPatch = bytecodePatch(
         val fallbackType = if (unlockTruck) "a" else "c"
 
         // ── CurrentSubscription ───────────────────────────────────────────────
-        // Reads the subscription store (H1:LX9/r) and returns the first match for
+        // Reads the subscription store (H1:LX9/q) and returns the first match for
         // the chosen vehicle type (tb/a$b.a=car, tb/a$b.b=both, tb/a$b.c=truck).
         CurrentSubscriptionFingerprint.method.apply {
             removeInstructions(0, instructions.size)
             addInstructions(
                 0,
                 """
-                iget-object v0, p0, Le9/u2;->H1:LX9/r;
+                iget-object v0, p0, Le9/v2;->H1:LX9/q;
                 sget-object v1, Ltb/a${'$'}b;->$primaryType:Ltb/a${'$'}b;
-                invoke-virtual {v0, v1}, LX9/r;->a(Ltb/a${'$'}b;)Ljava/util/ArrayList;
+                invoke-virtual {v0, v1}, LX9/q;->a(Ltb/a${'$'}b;)Ljava/util/ArrayList;
                 move-result-object v0
                 invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
                 move-result v1
                 if-eqz v1, :cond_found
-                iget-object v0, p0, Le9/u2;->H1:LX9/r;
+                iget-object v0, p0, Le9/v2;->H1:LX9/q;
                 sget-object v1, Ltb/a${'$'}b;->b:Ltb/a${'$'}b;
-                invoke-virtual {v0, v1}, LX9/r;->a(Ltb/a${'$'}b;)Ljava/util/ArrayList;
+                invoke-virtual {v0, v1}, LX9/q;->a(Ltb/a${'$'}b;)Ljava/util/ArrayList;
                 move-result-object v0
                 invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
                 move-result v1
                 if-eqz v1, :cond_found
-                iget-object v0, p0, Le9/u2;->H1:LX9/r;
+                iget-object v0, p0, Le9/v2;->H1:LX9/q;
                 sget-object v1, Ltb/a${'$'}b;->$fallbackType:Ltb/a${'$'}b;
-                invoke-virtual {v0, v1}, LX9/r;->a(Ltb/a${'$'}b;)Ljava/util/ArrayList;
+                invoke-virtual {v0, v1}, LX9/q;->a(Ltb/a${'$'}b;)Ljava/util/ArrayList;
                 move-result-object v0
                 invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
                 move-result v1
